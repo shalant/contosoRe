@@ -9,7 +9,7 @@ namespace ContosoUniversity.Pages.Courses
     {
         public SelectList DepartmentNameSL { get; set; }
 
-        public void PopulateDepartmentDropDownList(SchoolContext _context,
+        public void PopulateDepartmentsDropDownList(SchoolContext _context,
             object selectedDepartment = null)
         {
             var departmentQuery = from d in _context.Departments
